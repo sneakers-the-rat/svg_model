@@ -1,4 +1,4 @@
-Gliske Model
+SVG Model
 =============
 
 .. automodule:: svg_model.model

@@ -100,7 +100,7 @@ class SVG_Model(object):
         # create public attributes
         self.modules = {} # type: typing.Dict[str, NeuronGroup]
         self.synapses = {} # type: typing.Dict[str, Synapses]
-        self.monitors = {} # type: typing.Dict[str, ]
+        self.monitors = {} # type: typing.Dict[str, StateMonitor]
 
         # network used to keep track of objects created in methods
         self.network = Network() # type: typing.Optional[Network]
