@@ -5,4 +5,3 @@ SVG Model
     :members:
     :undoc-members:
     :private-members:
-    :member-order: 'bysource'
