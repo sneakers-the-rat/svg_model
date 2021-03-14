@@ -57,11 +57,6 @@ class SVG_Model(object):
         Postsynaptic neurons receive the voltage of the pre-synaptic neuron with some :attr:`.delay` scaled by
         :attr:`.weights`
 
-        Attributes:
-            modules (dict): Dictionary mapping module name to :class:`brian2.NeuronGroup` object
-            synapses (dict): Dictionary mapping ('from', 'to') module name tuples to their :class:`brian2.Synapse` object
-            monitors (dict): Dictionary mapping module name to a brian ``StateMonitor`` that stores the values of a run
-
         Args:
             size (int, dict): Size of modules, if an int (default: 1), size for all modules,
                 otherwise, a dict with {'module_name': size}
@@ -80,6 +75,13 @@ class SVG_Model(object):
             resting (float, dict): resting value to decay 2. if float, same for all modules,
                 otherwise a dict with {'module_name': resting}
             random_init (bool): Whether neurons should be initialized with some random initial value (default: True)
+
+
+        Attributes:
+            modules (dict): Dictionary mapping module name to :class:`brian2.NeuronGroup` object
+            synapses (dict): Dictionary mapping ('from', 'to') module name tuples to their :class:`brian2.Synapse` object
+            monitors (dict): Dictionary mapping module name to a brian ``StateMonitor`` that stores the values of a run
+
         """
         # create private attributes
         self._size = None
