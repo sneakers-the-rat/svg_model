@@ -26,9 +26,9 @@ Installation
 
 * Use the dang thing::
 
-   from gliske.model import Gliske_Model
+   from svg_model import SVG_Model
 
-   mod = Gliske_Model()
+   mod = SVG_Model()
 
    # run the model for one second
    mod.run(1)
@@ -39,7 +39,23 @@ Installation
    # lmao
    df.plot(x='timestamp', y=['distress', 'social_behavioral', 'body_ownership', 'gender', 'culture', 'feedback'])
 
-See the :class:`gliske.model.Gliske_Model` class documentation for more specifics
+* Reparameterize it too::
+
+   mod = SVG_Model(
+      weights = (0.2, 0.4),
+      tau     = 5, # make the decay time constant 5 seconds
+      # set resting values...
+      resting = {
+         'distress': 0.8,
+         'social_behavioral': 0.2,
+         'body_ownership': 0.5,
+         'gender': 0.5,
+         'culture': -1.0,
+         'feedback': -0.3
+      })
+
+
+See the :class:`svg_model.model.SVG_Model` class documentation for more specifics
 
 .. toctree::
    :maxdepth: 2
