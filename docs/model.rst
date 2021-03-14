@@ -1,5 +1,5 @@
 Gliske Model
 =============
 
-.. automodule:: gliske.model
+.. automodule:: svg_model.model
     :members:

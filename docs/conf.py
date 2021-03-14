@@ -17,7 +17,7 @@ sys.path.insert(0, os.path.abspath('../'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'gliske_model'
+project = 'svg_model'
 copyright = '2021, sneakers-the-rat'
 author = 'sneakers-the-rat'
 

@@ -7,7 +7,7 @@ from brian2 import *
 set_device('cpp_standalone')
 
 
-class Gliske_Model(object):
+class SVG_Model(object):
 
     MODULES = (
         'distress',
@@ -31,7 +31,7 @@ class Gliske_Model(object):
     ) # type: np.ndarray
     """
     Connectivity matrix between modules. 
-    Axes are indexed by :attr:`Gliske_Model.MODULES`.
+    Axes are indexed by :attr:`SVG_Model.MODULES`.
     Synapses connect from axis 0 (rows) to axis 1 (columns).
     "Minor" connections are denoted with 1, 
     "Major" connections are denoted with 2.

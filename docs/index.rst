@@ -10,7 +10,7 @@ Implements the "model" in the gliske paper as a simple dynamic system.
 
 .. image:: _images/model.png
    :width: 600
-   :alt: gliske "model"
+   :alt: "model"
 
 
 Installation
@@ -18,11 +18,11 @@ Installation
 
 * Clone the thing::
 
-   git clone https://github.com/sneakers-the-rat/gliske_model
+   git clone https://github.com/sneakers-the-rat/svg_model
 
 * Install the dang thing::
 
-   pip install ./gliske_model
+   pip install ./svg_model
 
 * Use the dang thing::
 
